@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html style="" class="decks present mz-js mz-no-touch mz-history mz-rgba mz-backgroundsize mz-opacity mz-cssanimations mz-csstransforms mz-csstransforms3d mz-csstransitions mz-localstorage mz-applicationcache mz-svg mz-fullscreen loaded"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Kickstarting Git: Slides</title>
+		<meta name="description" content="Slides">
+		<link rel="stylesheet" href="Kickstarting%20Git:%20Slides_files/slides.css">
+		<link href="Kickstarting%20Git:%20Slides_files/application-c9f7587e5f9987d24a22818dd0604b76.css" media="all" rel="stylesheet" type="text/css">
+		<link href="Kickstarting%20Git:%20Slides_files/deck-edb73f0ee546176c6acd21f89ea1bc42.css" media="all" rel="stylesheet" type="text/css">
+		<script src="Kickstarting%20Git:%20Slides_files/segment.js" async="" type="text/javascript"></script><script src="Kickstarting%20Git:%20Slides_files/ga.js" async="" type="text/javascript"></script><script src="Kickstarting%20Git:%20Slides_files/analytics.js" async="" type="text/javascript"></script><script src="Kickstarting%20Git:%20Slides_files/modernizr-8de39a011a7fbb0c52e24f7f6a30f4e7.js" type="text/javascript"></script>
+		<meta content="authenticity_token" name="csrf-param">
+<meta content="5IDQIrNEg5XTnlK21kLe1HG3LZlQoRIb5P0qh7cb3d0=" name="csrf-token">
+		<script type="text/javascript">
+  var analytics=analytics||[];analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["identify","track","trackLink","trackForm","trackClick","trackSubmit","pageview","ab","alias","ready"];for(var s=0;s<i.length;s++)analytics[i[s]]=r(i[s])};
+  analytics.load('8t66f1pnq9');
+</script>
+		<style id="user-css-output" type="text/css"></style>
+	<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script><style type="text/css"></style><style>a, button, .sl-select, .sl-checkbox label, .radio label { outline: none !important; }</style></head>
+	<body class="reveal-viewport theme-font-league theme-color-sand-grey">
+		<div data-background-transition="none" data-transition-speed="default" class="reveal fade">
+			<div style="width: 960px; height: 700px; transform: translate(-50%, -50%) scale(0.891643) translate(50%, 50%);" class="slides">
+				<section style="display: block;" class="present"><h1>
+<font color="#666666">kICKSTARTING</font><br>
+</h1>
+<p><br></p>
+<p><br></p>
+<img style="width: 437.778px; height: 168.124px; max-height: none; max-width: none;" src="Kickstarting%20Git:%20Slides_files/Git-Logo-1788C.png"><br><br><br><font color="#515151">29
+ Dec 2013&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Twitter <font color="#ffffff"><a target="_blank" href="http://twitter.com/jaipradeesh">@Jaipradeesh</a></font></font><br></section><section style="display: block;" class="future" hidden=""><h2>Let there be VERSION CONTROL, to<br>
+</h2>
+<p>
+<br></p>
+<iframe style="width: 859.952px; height: 491px; max-height: none; max-width: none;" src="Kickstarting%20Git:%20Slides_files/41027679.html" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" height="281" width="500"></iframe>
+</section><section style="display: block;" class="future" hidden=""><h2>WHat today<code>?</code>
+</h2>
+<p><br></p>
+<p><br></p>
+<ul>
+<li>Import a new project</li>
+<li>Making Changes</li>
+<li>Viewing Project Changes</li>
+<li>Managing Branches</li>
+<li>Using Git for Collaboration</li>
+<li>Next Steps</li>
+</ul></section><section style="display: block;" class="future" hidden=""><h2>a new project</h2>
+<p><br></p>
+<pre><font style="font-size: 42px;"><code>$ git init myproject
+
+$ cd myproject
+
+$ git add .
+
+$ git commit -m "Importing my <br><br>first code" </code></font></pre>
+<p><br></p>
+<p><br></p></section><section style="display: none;" class="future" hidden=""><h2>Collaborative git</h2>
+<p><br></p>
+<div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &gt; Create Document<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &gt; Spelling correction<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &gt; Grammar fix<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &gt; Color change<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &gt; Feature description<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &gt; Company logo</div></section><section style="display: none;" class="future" hidden=""><h2>dOUG AND DANA <br>
+</h2>
+<p>
+<br></p>
+<pre><code class="ruby">doug . <span class="variable">$ </span>git checkout master
+
+doug . <span class="variable">$ </span>git commit -a -m <span class="string">"My new logo"</span>
+
+doug . <span class="variable">$ </span>git push 
+
+</code></pre>
+
+<pre><code class="ruby">dana . <span class="variable">$ </span>git checkout -b danasfeature
+
+dana . <span class="variable">$ </span>git commit -a -m <span class="string">"My feature code"</span>
+
+dana . <span class="variable">$ </span>git push origin danasfeature 
+
+</code></pre>
+<br></section><section style="display: none;" class="future" hidden=""><h2>dOUG AND DANA <br>
+</h2>
+<p>
+<br></p>
+<pre><code class="ruby">doug . <span class="variable">$ </span>git checkout master
+
+doug . <span class="variable">$ </span>git commit -a -m <span class="string">"My new logo"</span>
+
+doug . <span class="variable">$ </span>git push 
+
+</code></pre>
+
+<pre><code class="ruby">dana . <span class="variable">$ </span>git checkout -b danasfeature
+
+dana . <span class="variable">$ </span>git commit -a -m <span class="string">"My feature code"</span>
+
+dana . <span class="variable">$ </span>git push origin danasfeature 
+
+
+</code></pre>
+<pre><code class="ruby">doug . <span class="variable">$ </span>git pull 
+
+doug . <span class="variable">$ </span>git merge danasfeature
+</code></pre>
+<br></section><section style="display: none;" class="future" hidden=""><h2>DOCUMENTATION DIERK</h2>
+<p><br></p>
+<pre><code class="ruby"><span class="variable">$ </span>git add -p <span class="constant">Myreport</span>.markdown
+
+<span class="variable">$ </span>git commit -m <span class="string">"Added latest statistics"</span>
+
+<span class="variable">$ </span>git log --graph --decorate 
+
+</code></pre>&nbsp;<br></section><section style="display: none;" class="future" hidden=""><h2>GET GOING</h2>
+<p><br></p>
+<p>FEDORA&nbsp; &gt; <br></p>
+<pre><code class="sql">su<span class="operator"><span class="keyword">do</span> yum install git </span></code></pre>
+<p>DEBIAN / UBUNTU &gt; <br></p>
+<pre><code class="sql">su<span class="operator"><span class="keyword">do</span> apt-<span class="keyword">get</span> install git </span></code></pre>
+<p>ARCH LINUX &gt;</p>
+<pre><code class="ruby"><span class="variable">$ </span>pacman -<span class="constant">S</span> git </code></pre>
+<p><code></code></p></section><section style="display: block;" class="future" hidden="">..<br><br>Setting Up &gt;&gt;<br><pre><font style="font-size: 24px;"><code>$ git config --global user.name "your_username"<br><br>$ git config --global user.email "yourmail@mail.com" <br><br></code></font></pre>
+<br><font style="font-size: 24px;"><br></font><pre class="command-line"><font style="font-size: 24px;"><span class="command"><code>$ ssh-keygen -t rsa -C "your_email@example.com"<br><br>$ ssh-add id_rsa <br><br></code></span></font></pre>
+<br></section><section style="display: block;" class="future" hidden=""><h2>QUICK WINS</h2>
+<p><br></p>
+<p><font style="font-size: 42px;">..git is</font></p>
+<p><br></p>
+<ul>
+<li>
+<b>Open,</b> not locked</li>
+<li>
+<b>Distributed</b>, not centralized</li>
+<li>
+<b>Conversations</b>, not cutoffs</li>
+<li>
+<b>Journal</b>, not backup<br>
+</li>
+</ul></section><section style="display: block;" class="future" hidden=""><h2>thank you!</h2>
+<p><br></p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Yet again..</p>
+<p><br></p>
+<p>I tweet from <font color="#4a86e8">@Jaipradeesh</font></p>
+<p><font color="#4a86e8">jaipradeesh@gmail.com</font> is my mail id</p>
+<p><br></p>
+<p><br></p>
+<p>..Questions??</p>
+<p><br></p></section>
+			</div>
+		<div class="backgrounds"><div class="slide-background present"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div></div><div style="display: block;" class="progress"><span style="width: 0px;"></span></div><aside style="display: block;" class="controls"><div class="navigate-left"></div><div class="navigate-right enabled"></div><div class="navigate-up"></div><div class="navigate-down"></div></aside><div class="state-background"></div><div class="pause-overlay"></div></div>
+
+		
+<script>
+	var SLConfig = {"current_user":{"id":41324,"username":"jaipradeesh","name":"Jai Pradeesh","email":"jaipradeesh@gmail.com","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/-yrfav0kNhyI/AAAAAAAAAAI/AAAAAAAAAGs/fRAApSkTNh4/photo.jpg","pro":false,"enterprise":false,"notify_on_receipt":false,"registered":true},"deck":{"id":106675,"slug":"kickstarting-git","title":"Kickstarting Git","description":"","visibility":"all","published_at":"2013-12-28T09:34:57Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/jaipradeesh/ddc1e7/kickstarting-git.jpg","view_count":3,"user":{"id":41324,"username":"jaipradeesh","name":"Jai Pradeesh","email":"jaipradeesh@gmail.com","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/-yrfav0kNhyI/AAAAAAAAAAI/AAAAAAAAAGs/fRAApSkTNh4/photo.jpg","pro":false,"enterprise":false,"notify_on_receipt":false,"registered":true},"background_transition":"none","transition":"fade","theme_id":null,"theme_font":"league","theme_color":"sand-grey","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"rtl":false,"access_token":"VKJqyopMBvvD8pSJKiQpJY4bqAwr"}};
+</script>
+		<script src="Kickstarting%20Git:%20Slides_files/application-d89a1f763e4ea8dda019cfdef608ef4a.js" type="text/javascript"></script><div id="modal"></div><div id="modal-cover"></div><div id="modal-background"></div>
+		<script src="Kickstarting%20Git:%20Slides_files/reveal.js" type="text/javascript"></script>
+		  <script>
+    analytics.identify('41324', {
+      name             : 'Jai Pradeesh',
+      email            : 'jaipradeesh@gmail.com',
+    });
+  </script>
+
+	<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "js-agent.newrelic.com/nr-100.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-5.newrelic.com","4fd2e9786b","1563900","cApZREQKWl9XFxZQVlAORB9QEFpfQQZLUVZd",0,41,new Date().getTime(),"","","","",""]);</script>
+
+<script src="Kickstarting%20Git:%20Slides_files/highlight.js" type="text/javascript"></script><script src="Kickstarting%20Git:%20Slides_files/notes.js" type="text/javascript"></script><script src="Kickstarting%20Git:%20Slides_files/nr-100.js" type="text/javascript"></script><script src="Kickstarting%20Git:%20Slides_files/4fd2e9786b" type="text/javascript"></script></body></html>
